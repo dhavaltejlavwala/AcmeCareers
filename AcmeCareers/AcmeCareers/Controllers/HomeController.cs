@@ -45,6 +45,8 @@ namespace AcmeCareers.Controllers
                     db.JobApplication.Add(InsertApplicationForm);
                     db.SaveChanges();
 
+                    var SendEmail = new SendEmail(Model);
+
                     ViewBag.Class = "success";
                     ViewBag.Strong = "Thank you";
                     ViewBag.Message = " for your application";
