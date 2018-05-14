@@ -153,6 +153,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\FakeDbSet.cs" />
     <Compile Include="Models\JobApplication.cs" />
     <Compile Include="Models\JobInfo.cs" />
     <Compile Include="Models\SendEmail.cs" />

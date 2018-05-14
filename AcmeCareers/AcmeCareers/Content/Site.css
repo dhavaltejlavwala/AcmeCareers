@@ -41,7 +41,12 @@ h3 {
     text-transform: uppercase;
     font: 20px "Lato", sans-serif;
     color: #111;
-}
+}
+
+.logo-img {
+    text-align: center;
+}
+
 .row-center {
     text-align: center
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web.Mvc;
 using AcmeCareers.Controllers;
+using AcmeCareers.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AcmeCareers.Tests
@@ -9,14 +10,20 @@ namespace AcmeCareers.Tests
     public class UnitTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CheckIndexPageView()
         {
-            // Arrange
-            JobInfoController controller = new JobInfoController();
-            // Act
-            ViewResult result = controller.Index() as ViewResult;
-            // Assert
+            var homeController = new HomeController();
+            var result = homeController.Index() as ViewResult;
             Assert.AreEqual("Index", result.ViewName);
+
         }
+
+        [TestMethod]
+        public void JobApplicationSubmit()
+        {
+            
+        }
+
+
     }
 }

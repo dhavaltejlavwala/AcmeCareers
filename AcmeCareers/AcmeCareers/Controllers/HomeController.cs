@@ -9,6 +9,19 @@ namespace AcmeCareers.Controllers
 {
     public class HomeController : Controller
     {
+        private IApplicationDbContext db;
+
+        public HomeController()
+        {
+            db = new ApplicationDbContext();
+        }
+
+        public HomeController(IApplicationDbContext dbContext)
+        {
+            db = dbContext;
+        }
+
+
         public ActionResult Index()
         {
             var db = new ApplicationDbContext();
