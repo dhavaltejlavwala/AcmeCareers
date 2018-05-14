@@ -14,7 +14,7 @@ $(document).ready(function () {
 function fillJobTable(data) {
     var html = "";
     var firstUpper = "";
-    html += "<tr>";
+    html += "<tr id = 'LoadJobInfoData' >";
     //$.each(data[0], function (key, value) {
     //    firstUpper = key.toString().toLowerCase().replace(/\b[a-z]/g, function (letter) {
     //        return letter.toUpperCase();
