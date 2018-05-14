@@ -1,4 +1,5 @@
 ﻿using AcmeCareers.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,16 +14,26 @@ namespace AcmeCareers.Controllers
         public ActionResult Index()
         {
             var db = new ApplicationDbContext();
-            var viewModel = new JobInfo();
+            //var viewModel = new JobInfo();
             var query = from job in db.JobInfo
                         select job;
             return View(query);
         }
 
-        // GET: JobInfo/Details/5
-        public ActionResult Details(int id)
+        // GET: JobInfo/Details
+        public string Details()
         {
-            return View();
+            var db = new ApplicationDbContext();
+            //var viewModel = new JobInfo();
+            var query = (from job in db.JobInfo
+                        select new
+                        {
+                            title = job.Title,
+                            location = job.Location ,
+                            contactPerson = job.ContactPerson
+                        }).ToList();
+            var JsonObject = JsonConvert.SerializeObject(query.ToArray());
+            return JsonObject;
         }
 
         // GET: JobInfo/Create

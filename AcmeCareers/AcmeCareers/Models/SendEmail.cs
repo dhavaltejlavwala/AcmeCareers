@@ -13,7 +13,7 @@ namespace AcmeCareers.Models
         {
             try
             {
-                var toEmail = "tejlavwaladhaval@gmail.com" //"careers@acme.com.au";
+                var toEmail = "tejlavwaladhaval@gmail.com"; //"careers@acme.com.au";
                 var EmailSubject = "New Job Application";
                 var EMailBody = Model.Name;
                 //Configuring webMail class to send emails  
