@@ -16,12 +16,12 @@ namespace AcmeCareers.Models
 
         [Required]
         [DataType(DataType.Text)]
-        [Display(Name = "Full Name")]
+        [Display(Name = "Name")]
         public string Name { get; set; }
 
         [Required]
         [DataType(DataType.EmailAddress)]
-        [Display(Name = "Email Address")]
+        [Display(Name = "Email")]
         public string Email { get; set; }
 
         [Required]

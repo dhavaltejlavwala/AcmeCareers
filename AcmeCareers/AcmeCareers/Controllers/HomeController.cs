@@ -28,7 +28,7 @@ namespace AcmeCareers.Controllers
         {
             try
             {
-                if (ModelState.IsValid && Model != null && !String.IsNullOrEmpty(Model.Name) && !String.IsNullOrEmpty(Model.Email) && !String.IsNullOrEmpty(Model.JobTitle) && !String.IsNullOrEmpty(Model.Comments)) //&& ((Model.JobId.JobId.GetType() == typeof(int)))
+                if (ModelState.IsValid && Model != null && !String.IsNullOrEmpty(Model.Name) && !String.IsNullOrEmpty(Model.Email) && !String.IsNullOrEmpty(Model.JobTitle)) //&& !String.IsNullOrEmpty(Model.Comments) && ((Model.JobId.JobId.GetType() == typeof(int)))
                 {
                     char[] splitchar = { '|' };
                     var splitJobTitle = Model.JobTitle.Split(splitchar);

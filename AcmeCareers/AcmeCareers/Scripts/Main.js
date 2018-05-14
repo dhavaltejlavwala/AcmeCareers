@@ -10,6 +10,7 @@ $(document).ready(function () {
     });
 });
 
+
 function fillJobTable(data) {
     var html = "";
     var firstUpper = "";
@@ -26,3 +27,10 @@ function fillJobTable(data) {
     }
     $("#JobInfoTable").append(html);
 }
+function onBegin() {
+    $("#submitBtn").hide();
+}
+function onComplete() {
+    $("#submitBtn").show();
+}
+

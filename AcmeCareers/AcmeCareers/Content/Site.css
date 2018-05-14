@@ -1,24 +1,118 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "proxima-nova", sans-serif;
+    color: #777;
+    margin-bottom:50px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.bgimg-1 {
+    height: 50%;
+    background-image: url('../Images/background.jpg');
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+    .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+.row-center {
+    text-align: center
+}
+
+table {
+    border: 0px;
+  
+}
+    table th {
+        text-align: center;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 16px "proxima-nova", sans-serif;
+        color: #111;
+    }
+    table td {
+        text-align: center;
+        color: #111;
+    }
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.button {
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    padding: 10px 30px 8px;
+    font-size: 16px;
+    
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+    .button:hover {
+        text-decoration: none;
+        cursor: pointer;
+        color: #000;
+    }
+
+.button-neutral {
+    color: #000;
+    border-color: #000;
+}
+
+    .button-neutral:hover {
+        color: #fff;
+        background-color: #000;
+    }
+
+.button-primary {
+    color: #23849b;
+    border-color: #23849b;
+}
+
+    .button-primary:hover {
+        color: #fff;
+        background-color: #23849b;
+    }
+
 textarea {
-    max-width: 280px;
+    resize: none;
 }
+
+
