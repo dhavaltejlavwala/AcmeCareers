@@ -25,7 +25,7 @@ namespace AcmeCareers.Models
                 WebMail.EnableSsl = true;
 
                 WebMail.UserName = "tejlavwaladhaval@gmail.com";
-                WebMail.Password = "intelinsidepentium4";
+                WebMail.Password = "password";
 
                 WebMail.From = "";
 
